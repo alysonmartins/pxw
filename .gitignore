@@ -6,6 +6,9 @@ yarn-error.log*
 pnpm-debug.log*
 .eslintcache
 
+# Cpanel deploy
+.deploy.conf
+
 # Vite
 dist/
 .vite/
