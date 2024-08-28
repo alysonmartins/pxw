@@ -37,7 +37,6 @@ export const LanguageProvider: React.FC<React.PropsWithChildren<{}>> = ({ childr
   );
 };
 
-
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (context === undefined) {
