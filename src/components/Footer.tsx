@@ -35,9 +35,9 @@ export function Footer() {
           <div className="text-base flex flex-1 flex-col gap-2">
             <img src="/assets/img/logo.svg" className="rounded" width="120" />
 
-            <a href="mailto:info@proexweb.com" className="text-white flex gap-2 items-center">
+            <a href="mailto:jack@proexweb.com" className="text-white flex gap-2 items-center">
               <EnvelopeSimple size={32} />
-              info@proexweb.com
+              jack@proexweb.com
             </a>
 
             <a href="https://wa.me/34722254330" className="text-white flex gap-2 items-center">
