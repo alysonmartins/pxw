@@ -13,11 +13,12 @@ export function Footer() {
           <div className=" flex flex-col flex-1">
             <h6 className="uppercase text-white">{translate('footer_services_1')}</h6>
             <ul className="fw-light list-unstyled">
-              <li><a href="/services" className="text-white">{translate('footer_services_2')}</a></li>
-              <li><a href="/services" className="text-white">{translate('footer_services_3')}</a></li>
-              <li><a href="/services" className="text-white">{translate('footer_services_4')}</a></li>
-              <li><a href="/services" className="text-white">{translate('footer_services_5')}</a></li>
-              <li><a href="/services" className="text-white">{translate('footer_services_6')}</a></li>
+              <li><a href="/services" className="text-white">{translate('services_1')}</a></li>
+              <li><a href="/services" className="text-white">{translate('services_2')}</a></li>
+              <li><a href="/services" className="text-white">{translate('services_3')}</a></li>
+              <li><a href="/services" className="text-white">{translate('services_4')}</a></li>
+              <li><a href="/services" className="text-white">{translate('services_5')}</a></li>
+              <li><a href="/services" className="text-white">{translate('services_6')}</a></li>
             </ul>
           </div>
 
