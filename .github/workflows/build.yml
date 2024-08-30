@@ -46,5 +46,5 @@ jobs:
         server: ftp.proexweb.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /production/
+        server-dir: /
         local-dir: ./gh-pages/
