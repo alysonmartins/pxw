@@ -38,5 +38,5 @@ jobs:
       with: 
         server: ftp.proexweb.com
         username: ${{secrets.FTP_USERNAME}}
-        username: ${{secrets.FTP_PASSWORD}}
+        password: ${{secrets.FTP_PASSWORD}}
         server-dir: /public_html/production/
