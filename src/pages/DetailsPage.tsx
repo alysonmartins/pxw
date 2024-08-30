@@ -239,7 +239,7 @@ export function DetailsPage() {
       <main className="container py-10 max-w-screen-xl flex max-sm:flex-col mx-auto gap-4 max-md:flex-col">
 
         <div className="flex flex-1">
-          <img src={`./assets/img/projects/${item.picture}`} className="aspect-auto rounded shadow-md" />
+          <img src={`/assets/img/projects/${item.picture}`} className="aspect-auto rounded shadow-md" />
         </div>
 
         <div className="flex flex-1 flex-col">
