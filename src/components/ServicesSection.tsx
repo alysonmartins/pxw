@@ -25,7 +25,7 @@ export function ServicesSection() {
 
           <div className="flex flex-1 flex-col mx-auto items-center justify-center">
 
-            <h3 className="flex font-bold uppercase gap-2 items-center justify-center">
+            <h3 className="flex font-bold uppercase gap-2 items-center justify-center text-blue-950">
               <Sun size={32} weight="fill" />
               {translate('home_services_section_text_4')}
             </h3>
