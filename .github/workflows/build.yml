@@ -34,9 +34,9 @@ jobs:
 
 
     - name: Sync files
-    uses: SamKirkland/FTP-Deploy-Action@4.0.0
-    with: 
-      server: ftp.proexweb.com
-      username: ${{secrets.FTP_USERNAME}}
-      username: ${{secrets.FTP_PASSWORD}}
-      server-dir: /public_html/production/
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with: 
+        server: ftp.proexweb.com
+        username: ${{secrets.FTP_USERNAME}}
+        username: ${{secrets.FTP_PASSWORD}}
+        server-dir: /public_html/production/
