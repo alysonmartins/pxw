@@ -10,7 +10,7 @@ export function ServicesSection() {
       <section className="">
         <div className="container flex max-md:flex-col gap-10 content-center">
 
-          <div className="flex flex-1 flex-col bg-red-500 items-center justify-center">
+          <div className="flex flex-1 flex-col bg-red-600 items-center justify-center">
 
 
             <div className="space-y-2 py-20">
