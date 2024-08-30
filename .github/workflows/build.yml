@@ -1,11 +1,12 @@
-name: React App build workflow
+name: React App build and deploy workflow
+
 on:
   push:
     branches:
       - main
-jobs:
-  build:
 
+jobs:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     strategy:
@@ -14,6 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -22,12 +24,27 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-    
+
     - name: Build
       run: npm run build
 
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{secrets.GITHUB_TOKEN}}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
+
+    - name: Checkout gh-pages branch
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        path: gh-pages
+
+    - name: Sync files to FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ftp.proexweb.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /production/
+        local-dir: ./gh-pages/
