@@ -12,7 +12,6 @@ export function ServicesSection() {
 
           <div className="flex flex-1 flex-col bg-red-600 items-center justify-center">
 
-
             <div className="space-y-2 py-20">
 
               <h3 className="text-2xl font-medium uppercase">{translate('home_services_section_text_1')}</h3>
@@ -59,7 +58,6 @@ export function ServicesSection() {
           </div>
 
         </div>
-
 
       </section>
     </>

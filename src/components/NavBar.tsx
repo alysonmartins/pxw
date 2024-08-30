@@ -6,11 +6,10 @@ export function NavBar() {
 
   return (
     <>
-
       <header className="flex flex-1 h-auto bg-blue-950/90 backdrop-blur-sm m-0 fixed-top align-items-center shadow-shade">
         <div className="container flex h-16 gap-2 justify-between items-center ">
 
-          <a className="" href="/">
+          <a href="/">
             <img src="/assets/img/logo.svg" className="w-48" alt="ProExWeb" />
           </a>
 
@@ -31,11 +30,9 @@ export function NavBar() {
 
           </div>
 
-
         </div>
 
       </header>
-
     </>
   )
 }
