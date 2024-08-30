@@ -21,7 +21,6 @@ export function NavBar() {
             <a href="/team/130b5701-6ea8-4e50-bb11-73b105e37756" className="text-white">{translate('navbar_3')}</a>
             <a href="/contact" className="text-white">{translate('navbar_4')}</a>
 
-
             <div className='flex gap-2 max-sm:hidden'>
               <span className='text-white'>[</span>
               <a className='text-red-600 cursor-pointer' onClick={() => setLanguage('en')}>🇺🇸</a>
